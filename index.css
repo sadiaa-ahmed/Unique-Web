@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+header{
+    background:url(./img/wp.jpg) ;
+    position: relative; 
+    z-index: 1;
+}
+nav {
+  /* background-color: #1f2a44; Dark background for the nav bar */
+  /* background-color: rgb(182, 130, 107); */
+  background-color: #7e692c;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center;
+  /* padding-right: 30px; Add right padding to shift items left */
+}
+
+.nav-logo .logo{
+  width: 90px;
+  height: auto;
+  margin: 5px;
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullets */
+  margin-left: 50px;
+  padding: 5px;
+  gap: 20px;
+  display: flex; /* Align items horizontally */
+  
+}
+
+nav ul li {
+  position: relative; /* Allows dropdown positioning */
+  padding: 5px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #171414; /* Text color */
+  font-size: 18px;
+  padding: 10px 10px;
+  display: flex;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+}
+
+nav ul li a:hover {
+  background-color: #1d2522; /* Change background on hover */
+  border-radius: 6px;
+  color: azure;
+}
+
+/* Dropdown styling */
+nav ul li ul {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position dropdown below parent */
+  top: 100%;
+  left: 0;
+  /* background-color: #2c3e50; Background color of the dropdown */
+  background-color: rgb(61, 55, 55);
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+  display: block; 
+}
+
+nav ul li ul li {
+  width: 200px; 
+}
+
+nav ul li ul li a {
+  padding: 10px;
+}
+
+nav ul li ul li a:hover {
+  background-color: #937421; 
+}
+/* nav{
+    width: 100%;
+    background-color: #b7dada;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(25, 19, 19, 0.1);
+ }  */
+/* .nav-logo .logo{
+    width: 90px;
+    height: auto;
+    margin: 5px;
+}
+.navbar {
+    flex: 1;
+    display: flex;
+    justify-content: center;  
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    text-shadow: 2px 1px 5px blanchedalmond; 
+}
+.navbar ul li {
+    margin:0 10px;
+    padding: 10px 10px;
+    font-size: 1.2em;
+} */
+/* .navbar ul li a {
+    color: rgb(28, 25, 25);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+   
+    text-decoration: underline;
+    color: rgb(25, 147, 151);
+} */
+.hero{
+    background-image: url(./img/is.jpg);
+    /* background-color: rgb(93, 160, 138); */
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 55vh;
+    background-size: cover;
+    padding-top: 07rem;
+
+}
+.bis{
+    text-align: right;
+    max-width: 1200px;
+    font-size: 35px;
+    text-shadow: 2px 1px 5px blanchedalmond; 
+}
+.hero-content {
+    text-align: right;
+    /* max-width: 1100px; */
+    padding: 15px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* border-radius: 5px; */
+}
+/* .hero-content h2{
+    font-size: 20px;
+    font-weight: 200; 
+    max-width: 1100px; */
+    /* text-shadow: 1px 1px 3px white;    */
+    /* text-shadow: 2px 1px 4px blanchedalmond;
+    text-align: right;
+} */
+/* .hero-content h2:hover{
+    color: wheat;
+    text-shadow: 1px 1px 3px black; 
+} */
+.hero-content h1{
+    font-size: 35px;
+    text-shadow: 2px 1px 5px blanchedalmond;
+    text-transform: uppercase; 
+    font-weight: 600;
+    max-width: 1300px;
+    padding-left: 2%;
+} 
+.hero-content p{
+    text-shadow: 2px 1px 4px blanchedalmond;
+    padding-left: 600px;
+    max-width: 1000px;
+    text-align: left;
+    line-height: 1.6;
+    border-radius: 10px;
+    /* font-size: 1.1em; */
+}
