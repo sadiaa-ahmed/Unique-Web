@@ -14,10 +14,10 @@ header{
     z-index: 1;
 }
 nav {
-  /* background-color: #1f2a44; Dark background for the nav bar */
+  /* background-color: #1f2a44;  */
   /* background-color: rgb(182, 130, 107); */
   background-color: #7e692c;
-  padding: 15px;
+  padding: 8px;
   width: 100%;
   display: flex;
   justify-content: flex-end; /* Align items to the right */
@@ -25,10 +25,13 @@ nav {
   /* padding-right: 30px; Add right padding to shift items left */
 }
 
-.nav-logo .logo{
-  width: 90px;
-  height: auto;
-  margin: 5px;
+.nav-logo {
+  position: relative;
+  width: 90%;     
+}
+
+.nav-logo .logo {
+  width: 80px; /* Adjust as needed */
 }
 
 nav ul {
@@ -36,7 +39,7 @@ nav ul {
   margin-left: 50px;
   padding: 5px;
   gap: 20px;
-  display: flex; /* Align items horizontally */
+  display: flex;
   
 }
 
