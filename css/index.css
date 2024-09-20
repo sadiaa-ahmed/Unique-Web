@@ -14,15 +14,12 @@ header{
     z-index: 1;
 }
 nav {
-  /* background-color: #1f2a44;  */
-  /* background-color: rgb(182, 130, 107); */
   background-color: #7e692c;
   padding: 8px;
   width: 100%;
   display: flex;
   justify-content: flex-end; /* Align items to the right */
   align-items: center;
-  /* padding-right: 30px; Add right padding to shift items left */
 }
 
 .nav-logo {
@@ -185,5 +182,4 @@ nav ul li ul li a:hover {
     text-align: left;
     line-height: 1.6;
     border-radius: 10px;
-    /* font-size: 1.1em; */
 }
