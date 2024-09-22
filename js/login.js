@@ -1,8 +1,8 @@
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword } from "./firebase.js";
 
 const auth = getAuth();
 
-// Login form handling
+// Login Form Handling
 const loginForm = document.getElementById('login-form');
 loginForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -12,14 +12,13 @@ loginForm.addEventListener('submit', (e) => {
 
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      // Logged in successfully
+      // Successfully logged in
       const user = userCredential.user;
       alert('Login successful!');
-      window.location.href = "home.html"; // Redirect to home page after login
+      window.location.href = "index.html"; // Redirect to homepage after login
     })
     .catch((error) => {
-      const errorCode = error.code;
       const errorMessage = error.message;
-      alert(errorMessage);
+      alert(errorMessage); // Show error message if login fails
     });
-});
+});``

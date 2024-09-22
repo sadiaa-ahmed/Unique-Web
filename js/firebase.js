@@ -1,6 +1,10 @@
 // Import the functions you need from the SDKs
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+import { 
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword ,
+  } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
 
 // Firebase configuration
 const firebaseConfig = {

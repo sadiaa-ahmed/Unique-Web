@@ -1,8 +1,8 @@
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword } from "./firebase.js";
 
 const auth = getAuth();
 
-// Signup form handling
+// Signup Form Handling
 const signupForm = document.getElementById('signup-form');
 signupForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -15,10 +15,9 @@ signupForm.addEventListener('submit', (e) => {
       // Signed up successfully
       const user = userCredential.user;
       alert('Signup successful!');
-      window.location.href = "login.html"; // Redirect to login after signup
+      window.location.href = "index.html"; // Redirect after signup
     })
     .catch((error) => {
-      const errorCode = error.code;
       const errorMessage = error.message;
       alert(errorMessage);
     });
