@@ -15,7 +15,7 @@ loginForm.addEventListener('submit', (e) => {
       // Successfully logged in
       const user = userCredential.user;
       alert('Login successful!');
-      window.location.href = "index.html"; // Redirect to homepage after login
+      window.location.href = "main.html"; // Redirect to homepage after login
     })
     .catch((error) => {
       const errorMessage = error.message;

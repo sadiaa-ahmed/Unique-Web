@@ -15,7 +15,7 @@ signupForm.addEventListener('submit', (e) => {
       // Signed up successfully
       const user = userCredential.user;
       alert('Signup successful!');
-      window.location.href = "index.html"; // Redirect after signup
+      window.location.href = "main.html"; // Redirect after signup
     })
     .catch((error) => {
       const errorMessage = error.message;
