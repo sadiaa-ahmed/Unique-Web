@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
@@ -7,13 +7,105 @@
 }
 
 body {
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: url(../img/isl1.jpg);
+    background-image: url('./html/img/isl1.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+h1.arabic-text {
+    font-size: 2.5rem;
+    color: #f9c74f;
+    margin-bottom: 1.5rem;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    transform: perspective(500px) rotateX(10deg);
+    transition: transform 0.3s ease-in-out;
+}
+.ayah-pulsate {
+    display: inline-block;
+    font-size: 1.2em; 
+    font-weight: bold; 
+    color: #f9c74f; 
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        opacity: 0.5; /* Half visible */
+    }
+}
+
+h1.welcome-text {
+    font-size: 2.5rem;
+    color: #f9c74f;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transform: perspective(500px) rotateY(-10deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+    transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+}
+
+p.arabic-translation, .intro-text {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    /* color: #ffffff; */
+    color: #8f8787;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+p.arabic-translation:hover{
+    color: #ffffff;
+}
+
+.intro-text {
+    font-size: 1.5rem;
+    margin: 20px auto; 
+    color: #8f8787;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    line-height: 1.8; 
+    max-width: 700px;
+    text-align: justify;
+    font-weight: bold;
+}
+.intro-text:hover{
+    color: #ffffff;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn {
+    background-color: #b4a467;
+    color: #000;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #74643e;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+    transform: translateY(3px);
 }
