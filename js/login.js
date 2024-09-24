@@ -13,12 +13,12 @@ loginForm.addEventListener('submit', (e) => {
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Successfully logged in
-      const user = userCredential.user;
-      alert('Login successful!');
-      window.location.href = "main.html"; // Redirect to homepage after login
+      // const user = userCredential.user;
+      // alert('Login successful!');
+      window.location.href = "main.html"; 
     })
     .catch((error) => {
       const errorMessage = error.message;
-      alert(errorMessage); // Show error message if login fails
+      alert(errorMessage); 
     });
-});``
+});

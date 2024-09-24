@@ -14,7 +14,7 @@
             </div>
         <div>
             <ul>
-              <li><a href="/home">Home</a></li>
+              <li><a href="main.html">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/learn-quran">Learn Quran</a>
                 <ul>
@@ -36,6 +36,7 @@
                 </ul>
               </li>
               <li><a href="/contact-us">Contact Us</a></li>
+              <li><button id="logout-btn">Log Out</button></li>
              </ul>
             </div>
           </nav>
@@ -43,15 +44,25 @@
 
     <!-- Home Page -->
      <main>
-        <section class="hero">
-                <div class="bis">
-                    <h1>بِسْمِ اللهِ الرَّحِيْمِ الرَّحْمٰنِ </h1>
-                </div>
+      <section class="hero">
+        <div class="hero-container">
+            <div class="sidebar">
+                <img src="./img/quran1.jpg" alt="Quran Image">
+            </div>
             <div class="hero-content">
+                <div class="bis">
+                    <h1>بِسْمِ اللهِ الرَّحِيْمِ الرَّحْمٰنِ</h1>
+                </div>
                 <h1>Welcome to Quran Education Space</h1>
                 <p>The Quran, a divine revelation and a timeless miracle, illuminates the hearts of millions with its profound wisdom and unparalleled beauty. Each verse is a soothing balm, a guiding light through life's darkest moments, and a source of solace and strength. The Quran speaks to the depths of the human soul, reminding us of our purpose, our Creator's boundless mercy, and the eternal promise of hope and salvation. In its verses, we find a connection to the divine that transcends time and space, offering peace and tranquility to all who seek its guidance with a sincere heart.</p>
+                <div class="btn">
+                    <a href="about.html">
+                        <button class="styled-button">Read More</button>
+                    </a>
+                </div>
             </div>
-        </section>    
+        </div>
+    </section>    
     </main>
     <script type="module" src="../js/app.js"></script>
 </body>

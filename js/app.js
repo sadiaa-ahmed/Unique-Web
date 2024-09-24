@@ -18,7 +18,7 @@ onAuthStateChanged(auth, (user) => {
     if (user) {
         // User is signed in, you can redirect or load user-specific content
     } else {
-        // No user is signed in, redirect to login
-        window.location.href = "login.html"; // Adjust as needed
+        window.location.href = "login.html"; 
     }
 });
+

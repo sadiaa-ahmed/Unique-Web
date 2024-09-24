@@ -13,9 +13,9 @@ signupForm.addEventListener('submit', (e) => {
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed up successfully
-      const user = userCredential.user;
-      alert('Signup successful!');
-      window.location.href = "main.html"; // Redirect after signup
+      // const user = userCredential.user;
+      // alert('Signup successful!');
+      window.location.href = "main.html";
     })
     .catch((error) => {
       const errorMessage = error.message;
