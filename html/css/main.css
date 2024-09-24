@@ -51,7 +51,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none; 
   color: #171414; 
-  font-size: 22px;
+  font-size: 20px;
   padding: 10px 20px; 
   display: block; 
   transition: background-color 0.3s ease;
@@ -91,7 +91,7 @@ nav ul li ul li a:hover {
   font-weight: bold;
   background-color: transparent; 
   color: #985f0a;
-  font-size: 22px; 
+  font-size: 20px; 
   padding: 10px 20px;
   border: none;
   cursor: pointer;
