@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quranic Tutor </title>
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="./img/th.png" alt="logo" class="logo">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="/resources">Resources</a>
+                        <ul>
+                            <li><a href="/resources/hadith">Hadith Collection</a></li>
+                            <li><a href="/resources/articles">Islamic Articles</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/fee-structure">Learning Package</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                    <li><button id="logout-btn">Log Out</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or inquiries, feel free to reach out!</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <h2>Follow Us</h2>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
