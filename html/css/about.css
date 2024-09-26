@@ -11,6 +11,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 header {
@@ -102,3 +104,69 @@ nav ul li button {
   width: 100%; 
   text-align: left; 
 }
+
+main {
+  overflow-y: auto;
+  max-height: calc(100vh - 20px);
+  margin: 0; 
+  padding: 0; 
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 0 auto;
+  color: white;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+  margin-top: 0; 
+  color: #985f0a;
+  font-family: 'Arial', sans-serif;
+}
+
+.left-column, .right-column {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-section h2 {
+  color: #985f0a;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-section p, .about-section li {
+  line-height: 1.8;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding-left: 0;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+ul li strong{
+  color: #141111;
+}
+
+.about-section p:last-child {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 20px;
+  /* background-color: #877b49; */
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} 

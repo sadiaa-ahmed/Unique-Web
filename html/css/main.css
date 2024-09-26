@@ -136,22 +136,6 @@ nav ul li button {
   margin-top: 10px;
 }
 
-
-/* @media screen and (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .sidebar img {
-    margin: 0 auto 20px;
-    width: 100%; 
-  }
-
-  .hero-content {
-    max-width: 100%;
-  }
-} */
 .btn {
   text-align: center; 
   margin: 20px;

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quranic Tutor </title>
     <link rel="stylesheet" href="./css/contact.css">
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js"></script> -->
+    <script type="module" src="../js/firebase.js"></script>
 </head>
 <body>
     <header>
@@ -23,8 +26,8 @@
                             <li><a href="/resources/articles">Islamic Articles</a></li>
                         </ul>
                     </li>
-                    <li><a href="/fee-structure">Learning Package</a></li>
-                    <li><a href="/contact-us">Contact Us</a></li>
+                    <li><a href="fee-structure">Learning Package</a></li>
+                    <li><a href="contact-us">Contact Us</a></li>
                     <li><button id="logout-btn">Log Out</button></li>
                 </ul>
             </div>
@@ -35,7 +38,7 @@
         <section class="contact-section">
             <h1>Contact Us</h1>
             <p>If you have any questions or inquiries, feel free to reach out!</p>
-            <form action="submit_form.php" method="post">
+            <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -56,5 +59,32 @@
             </div>
         </section>
     </main>
-</body>
+    <script type="module">
+        import { db } from '../js/firebase.js'; // Adjust the path as necessary
+        import { collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js"; // Import Firestore functions
+
+        // Form submit event
+        document.getElementById('contact-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            try {
+                // Save data to Firestore
+                await addDoc(collection(db, 'messages'), {
+                    name: name,
+                    email: email,
+                    message: message,
+                    timestamp: serverTimestamp()
+                });
+                alert('Message sent successfully!');
+                document.getElementById('contact-form').reset();
+            } catch (error) {
+                alert('Error sending message: ' + error);
+            }
+        });
+    </script>
+</body.>
 </html>
