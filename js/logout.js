@@ -1,6 +1,5 @@
-import { getAuth, signOut } from "./firebase.js"; // Ensure the correct path
+import { auth, signOut } from "./firebase.js"; // Ensure the correct path
 
-const auth = getAuth();
 const logoutBtn = document.getElementById('logout-btn');
 
 // Check if logout button exists

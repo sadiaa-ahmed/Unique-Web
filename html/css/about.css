@@ -125,8 +125,9 @@ main {
 
 .about-section h1 {
   margin-top: 0; 
-  color: #985f0a;
   font-family: 'Arial', sans-serif;
+  padding: 2px;
+  margin: 0%;
 }
 
 .left-column, .right-column {
@@ -134,15 +135,27 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 2px;
+  margin: 0%;
 }
 
 .about-section h2 {
-  color: #985f0a;
+  /* color: #985f0a; */
   font-family: 'Arial', sans-serif;
+  padding: 1px;
+  margin: 1px;
 }
 
 .about-section p, .about-section li {
   line-height: 1.8;
+  color: #985f0a;
+
+}
+.about-section li{
+  color: aliceblue;
+}
+.about-section strong1{
+  color: #985f0a;
 }
 
 ul {
@@ -154,6 +167,7 @@ ul li {
   padding-left: 0;
   font-size: 1.1rem;
   margin-bottom: 10px;
+
 }
 ul li strong{
   color: #141111;
@@ -163,10 +177,31 @@ ul li strong{
   text-align: left;
   font-weight: bold;
   margin-top: 20px;
-  /* background-color: #877b49; */
+  color: black;
+  /* background-color: #615c45; */
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 } 
+/* .social-links {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+.social-links h2 {
+  margin-bottom: 10px; 
+  color: #141111;
+}
+
+.social-links a {
+  color: #985f0a; 
+  text-decoration: none; 
+  margin: 0 10px; 
+  transition: color 0.3s ease; 
+}
+
+.social-links a:hover {
+  color: #ffcc00; 
+} */

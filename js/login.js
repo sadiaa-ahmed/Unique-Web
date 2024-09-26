@@ -1,7 +1,4 @@
-import { getAuth, signInWithEmailAndPassword } from "./firebase.js";
-
-const auth = getAuth();
-
+import { auth, signInWithEmailAndPassword } from "./firebase.js";
 // Login Form Handling
 const loginForm = document.getElementById('login-form');
 loginForm.addEventListener('submit', (e) => {
