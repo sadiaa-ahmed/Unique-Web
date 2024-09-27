@@ -70,8 +70,8 @@ p.arabic-translation:hover{
 }
 
 .intro-text {
-    font-size: 1.5rem;
-    margin: 20px auto; 
+    font-size: 1rem;
+    margin: 10px auto; 
     color: #8f8787;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     line-height: 1.8; 
