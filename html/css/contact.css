@@ -6,9 +6,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 90vh;
-    /* overflow-y: auto; Adjust overflow */
-    /* overflow-x: hidden; */
-    overflow: hidden;
+    overflow-y : auto;
+    overflow-x: hidden;
     background-image: url(../img/isl1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -98,7 +97,6 @@ nav ul li ul li a:hover {
     cursor: pointer;
 }
 .contact-section {
-    /* background-color: rgba(255, 255, 255, 0.9);  */
     background-color: #8a7f5f;
     margin: 0px auto; 
     padding: 15px; 
@@ -160,4 +158,37 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #8a671d; 
     color: #141111;
+}
+footer {
+    background-color: #322a1e; 
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+.social-links a {
+    color: white;
+    margin-left: 15px;
+    font-size: 24px; /* Icon size */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #985f0a; /* Hover color */
+}
+
+.social-links i {
+    transition: color 0.3s ease; /* Smooth transition */
 }

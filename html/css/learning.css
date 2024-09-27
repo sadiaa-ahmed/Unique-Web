@@ -6,7 +6,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-image: url(../img/isl1.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -45,45 +46,16 @@ nav ul {
 nav ul li {
   position: relative; 
   font-weight: bold;
-  color: #985f0a;
+  color: #985f0a; 
 }
 
 nav ul li a {
   text-decoration: none; 
-  color: #171414; 
+  color: #985f0a; 
   font-size: 20px;
   padding: 10px 20px; 
   display: block; 
   transition: background-color 0.3s ease;
-  color: #985f0a;
-}
-
-nav ul li ul {
-  display: none; 
-  position: absolute; 
-  top: 100%; 
-  left: 0;
-  background-color: rgb(61, 55, 55); 
-  padding: 10px 0;
-  border-radius: 5px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
-}
-
-nav ul li:hover ul {
-  display: block;
-}
-
-nav ul li ul li {
-  width: 200px; 
-}
-
-nav ul li ul li a {
-  padding: 10px;
-  color: #141111; 
-}
-
-nav ul li ul li a:hover {
-  background-color: #937421; 
 }
 
 #logout-btn {
@@ -97,8 +69,84 @@ nav ul li ul li a:hover {
   cursor: pointer;
 }
 
-nav ul li button {
-  display: block;
-  width: 100%; 
-  text-align: left; 
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #8a7f5f;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  perspective: 1000px; 
+}
+
+h1, h2 {
+  text-align: center;
+  color: #4c3005; 
+}
+
+h2 {
+  margin-top: 20px; 
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  transform: rotateX(0deg); 
+  transition: transform 0.3s;
+}
+
+table:hover {
+  transform: rotateX(10deg); 
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #0d0c0c;
+  background-color: #655d44;
+  border-radius: 10px ; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #53432b; 
+}
+
+td {
+  color: #333; 
+}
+footer {
+  background-color: #322a1e; 
+  color: white;
+  padding: 20px 0;
+  margin-top: 20px
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.social-links a {
+  color: white;
+  margin-left: 15px;
+  font-size: 24px; 
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #985f0a; /* Hover color */
+}
+
+.social-links i {
+  transition: color 0.3s ease; 
 }
