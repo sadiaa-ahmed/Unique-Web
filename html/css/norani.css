@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100vh;
+  background-image: url(../img/isl1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.nav-logo {
+  margin-left: 20px;
+}
+
+.nav-logo .logo {
+  width: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #985f0a;
+  font-size: 20px;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3d3737;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 200px;
+}
+
+nav ul li ul li a {
+  padding: 10px;
+  color: #141111;
+}
+
+nav ul li ul li a:hover {
+  background-color: #937421;
+}
+
+#logout-btn {
+  margin-right: 10px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #985f0a;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.course-content {
+  max-width: 60%;
+  margin: 50px;
+  color: #fff;
+}
+
+.course-content h1{
+  color: #985f0a;
+  text-shadow: 2px 1px 5px blanchedalmond;
+}
+.course-content h3{
+    color: #985f0a;
+}
+
+.course-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.course-content p {
+  line-height: 1.8;
+  font-size: 18px;
+  color: aliceblue;
+}
+
+.course-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.course-content ul li {
+  margin-bottom: 10px;
+}
