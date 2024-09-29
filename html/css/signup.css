@@ -104,3 +104,27 @@ p a {
 p a:hover {
     color: aliceblue;
 }
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%; 
+        padding: 1.5rem; 
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        font-size: 0.9rem; 
+    }
+
+    button[type="submit"] {
+        font-size: 1rem; 
+        padding: 0.6rem; 
+    }
+
+    p {
+        font-size: 0.9rem; 
+    }
+}

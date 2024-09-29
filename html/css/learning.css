@@ -144,9 +144,9 @@ footer {
 }
 
 .social-links a:hover {
-  color: #985f0a; /* Hover color */
-}
+  color: #985f0a; 
+ }
 
 .social-links i {
   transition: color 0.3s ease; 
-}
+} 
