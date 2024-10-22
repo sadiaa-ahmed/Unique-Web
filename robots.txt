@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap:https://quranic-web-b4177.web.app/sitemap.xml
